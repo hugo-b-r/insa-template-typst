@@ -5,6 +5,10 @@
 These are my custom templates that I want to use at INSA de Lyon, a french
 engineering school.
 
+## Thanks
+
+Special thanks for the [typst](typst.app) team for providing such a good product !
+
 ## Copyright
 
 Everything is Licensed under the MIT license, except the `assets` directory.
