@@ -39,7 +39,7 @@
   // Title row.
   align(center)[
     #pad(top: 24pt, bottom: 0pt, [
-        #block(text(weight: 0, 17pt, title))
+        #block(text(weight: 900, 21pt, title))
         #emph(custom-date-format(date, "Day DD MMMM YYYY", "fr"))
       ]
     )
