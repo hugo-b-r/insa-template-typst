@@ -1,7 +1,7 @@
 #import "../templates/short-report.typ":project
 
 #show: project.with(
-  title: "A spoonful of titles",
+  title: "A spoonful of title",
   authors: ("Walt Disney",),
   
 )
