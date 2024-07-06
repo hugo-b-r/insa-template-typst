@@ -7,8 +7,9 @@
   school_referent: "Y neuça",
   group_number: 7,
   promo_number: 42,
-  company: "Apple Computer",
+  company: "Apple",
   front_comment: "Comment une entreprise de la taille d'apple arrive-t-elle a exister ?",
-  front_image: "../assets/apple_park.jpg"
+  front_image: "../assets/apple_park.jpg",
+  company_logo: "../assets/apple_logo.jpg"
 )
 
