@@ -1,6 +1,7 @@
-#let project(title: "", student: "", promo_number: "", group_number: "", company: "", front_comment: "", date: datetime.today(), body, company_referent: "", school_referent: "", front_image: "") = {
+#let project(title: "", student: "", promo_number: "", group_number: "", company: "", front_comment: "", date: datetime.today(), body, company_referent: "", school_referent: "", front_image: "", company_logo: "") = {
   // Set the document's basic properties.
   set document(author: student, title: title)
+  let insa_logo_path = "../assets/insa_logo.png"
   set page(
     paper: "a4",
     header: context {
@@ -9,7 +10,7 @@
         #grid(
           columns: (1fr, 1fr),
           align(left,
-            image("../assets/insa_logo.png", width: 50%)
+            image(insa_logo_path, width: 50%)
           ),
           align(right, [
             #let subheading = query(
@@ -49,10 +50,10 @@
     #grid(
       columns: (1fr, 1fr),
       row-gutter: 20pt,
-      align(center + horizon, image("../assets/insa_logo.png", width: 50%)),
-      image("../assets/apple_logo.jpg", width: 15%),
+      align(center + horizon, image(insa_logo_path, width: 50%)),
+      image(company_logo, width: 15%),
       "INSA de Lyon",
-      "Apple Computer",
+      company,
       [Professeur référent: #school_referent],
       [Tuteur: #company_referent],
     )
